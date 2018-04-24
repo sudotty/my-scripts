@@ -18,9 +18,3 @@ gitUser = 'git config user.name '
 if os.getcwd().find("github") != -1:
     os.popen(gitEmail + orcaEmail)
     os.popen(gitUser + orcaName)
-
-# 打印输出
-newEmail = os.popen(gitEmail).read()
-newUser = os.popen(gitUser).read()
-print("git email: ", newEmail)
-print("git user: ", newUser)
